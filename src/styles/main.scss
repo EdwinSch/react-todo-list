@@ -1,0 +1,22 @@
+// Init
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+$font: "Josefin Sans", sans-serif;
+$inspect: solid red 1px;
+$gradient: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+$white: #ffffff;
+
+// Lightmode
+$bgBody: #f2f2f2;
+$bgFields: #ffffff;
+$todoText: #494c6b;
+$text: #9495a5;
+
+// Main Styles
+body {
+  font-family: $font;
+  background: $bgBody;
+}
