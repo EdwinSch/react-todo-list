@@ -99,9 +99,25 @@ header {
     background: $bgFields;
     padding: 0 24px;
     border-bottom: solid 1px $borderColor;
+
+    .flex-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
   li:nth-child(1) {
     border-radius: 5px 5px 0 0;
+  }
+
+  .delete-item {
+    font-size: 22px;
+    cursor: pointer;
+    transition: 250ms ease;
+  }
+  .delete-item:hover {
+    transform: scale(1.2);
   }
 }
 
