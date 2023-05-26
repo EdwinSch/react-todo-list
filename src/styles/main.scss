@@ -15,20 +15,27 @@ $bgFields: #ffffff;
 $todoText: #494c6b;
 $text: #9495a5;
 $borderColor: #e3e4f1;
-$bgImage: url(../assets/bg-desktop-light.jpg);
+$bgImageDesktop: url(../assets/bg-desktop-light.jpg);
+$bgImgageMobile: url(../assets/bg-mobile-light.jpg);
 
 // Main Styles
 body {
   font-family: $font;
   background: $bgBody;
   height: 100vh;
-  padding-top: 70px;
-  background-image: $bgImage;
+  padding: 70px 24px;
+  background-image: $bgImageDesktop;
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: $bgImgageMobile;
+  }
+}
+
 main {
-  // border: $inspect;
   margin: 0 auto;
   max-width: 541px;
 }
@@ -82,7 +89,6 @@ header {
 
 // List
 .list-container {
-  // border: $inspect;
   margin-top: 24px;
   width: 100%;
 
@@ -122,8 +128,8 @@ header {
   }
 }
 
-// Buttons
-.buttons-container {
+// Footer
+footer {
   width: 100%;
   height: 50px;
   background: $bgFields;
@@ -139,11 +145,6 @@ header {
     color: $text;
   }
 
-  .cat-buttons {
-    display: flex;
-    gap: 18px;
-  }
-
   button {
     background: none;
     font-family: $font;
@@ -157,5 +158,23 @@ header {
   button:hover {
     font-weight: 700;
     color: $todoText;
+  }
+}
+
+// Sort Buttons
+.sort-buttons-container {
+  display: flex;
+  gap: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .toggle-hide {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .toggle-show {
+    display: block;
   }
 }

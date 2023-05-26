@@ -1,4 +1,4 @@
-import Buttons from "./Buttons";
+import Footer from "./Footer";
 
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -21,7 +21,7 @@ const List = () => {
           </div>
         </li>
       </ul>
-      <Buttons />
+      <Footer />
     </section>
   );
 };
