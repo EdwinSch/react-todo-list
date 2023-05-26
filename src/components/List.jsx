@@ -1,3 +1,5 @@
+import Buttons from "./Buttons";
+
 const List = () => {
   return (
     <section className="list-container">
@@ -11,6 +13,7 @@ const List = () => {
           Some item
         </li>
       </ul>
+      <Buttons />
     </section>
   );
 };
