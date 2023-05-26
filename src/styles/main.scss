@@ -14,9 +14,20 @@ $bgBody: #f2f2f2;
 $bgFields: #ffffff;
 $todoText: #494c6b;
 $text: #9495a5;
+$bgImage: url(../assets/bg-desktop-light.jpg);
 
 // Main Styles
 body {
   font-family: $font;
   background: $bgBody;
+  height: 100vh;
+  background-image: $bgImage;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+main {
+  border: $inspect;
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 541px;
 }
