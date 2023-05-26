@@ -31,3 +31,27 @@ main {
   margin-top: 70px;
   width: 541px;
 }
+
+// Header
+header {
+  display: flex;
+  justify-content: space-between;
+
+  h1 {
+    color: $white;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 0.94rem;
+  }
+  button {
+    font-size: 25px;
+    color: $white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 250ms ease;
+  }
+  button:hover {
+    transform: scale(1.2);
+  }
+}
