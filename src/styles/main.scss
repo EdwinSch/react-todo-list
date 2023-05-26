@@ -21,6 +21,7 @@ body {
   font-family: $font;
   background: $bgBody;
   height: 100vh;
+  padding-top: 70px;
   background-image: $bgImage;
   background-repeat: no-repeat;
   background-size: contain;
@@ -28,8 +29,7 @@ body {
 main {
   border: $inspect;
   margin: 0 auto;
-  margin-top: 70px;
-  width: 541px;
+  max-width: 541px;
 }
 
 // Header
@@ -53,5 +53,28 @@ header {
   }
   button:hover {
     transform: scale(1.2);
+  }
+}
+
+// Input
+.form-control {
+  margin-top: 40px;
+
+  input[type="text"] {
+    width: 100%;
+    height: 64px;
+    border-radius: 5px;
+    border: none;
+    font-family: $font;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: $todoText;
+    letter-spacing: -0.25px;
+    background: $bgFields;
+
+    padding-left: 24px;
+  }
+  input[type="text"]::placeholder {
+    color: #9495a5;
   }
 }
