@@ -9,14 +9,14 @@ const List = () => {
         <li className="item">
           <input type="checkbox" name="" id="" />
           <div className="flex-container">
-            Some item
+            <p>Some item</p>
             <AiOutlineClose className="delete-item" />
           </div>
         </li>
         <li className="item">
           <input type="checkbox" name="" id="" />
           <div className="flex-container">
-            Some item 2
+            <p>Some item 2</p>
             <AiOutlineClose className="delete-item" />
           </div>
         </li>
