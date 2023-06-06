@@ -6,20 +6,18 @@ const List = () => {
   return (
     <section className="list-container">
       <ul className="list">
+        {/* start */}
         <li className="item">
-          <input type="checkbox" name="" id="" />
+          <label htmlFor="checkbox" className="box">
+            <input type="checkbox" name="" id="checkbox" />
+            <span className="checkmark"></span>
+          </label>
           <div className="flex-container">
             <p>Some item</p>
             <AiOutlineClose className="delete-item" />
           </div>
         </li>
-        <li className="item">
-          <input type="checkbox" name="" id="" />
-          <div className="flex-container">
-            <p>Some item 2</p>
-            <AiOutlineClose className="delete-item" />
-          </div>
-        </li>
+        {/* end */}
       </ul>
       <Footer />
     </section>
