@@ -4,10 +4,12 @@ const Footer = () => {
   return (
     <footer>
       <p className="items-left">5 items left</p>
-      <div className="toggle-hide toggle-show">
+      <div className="inner-sort-buttons">
         <SortButtons />
       </div>
-      <button type="button">Clear Completed</button>
+      <button type="button" className="text-button">
+        Clear Completed
+      </button>
     </footer>
   );
 };

@@ -9,7 +9,7 @@ function App() {
       <Header />
       <Input />
       <List />
-      <div className="toggle-show toggle-hide">
+      <div className="outer-sort-buttons">
         <SortButtons />
       </div>
     </main>
