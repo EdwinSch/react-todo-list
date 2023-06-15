@@ -11,8 +11,8 @@ import { nanoid } from "nanoid";
 function App() {
   //init list
   const [items, setItems] = useState(testdata);
-  // console.log(items);
 
+  // Add Item
   const addItem = (itemName) => {
     const newItem = {
       name: itemName,
@@ -22,6 +22,13 @@ function App() {
     setItems([...items, newItem]);
   };
 
+  // Remove Item
+  const removeItem = (itemId) => {
+    const newItems = items.filter((item) => item.id !== itemId);
+    setItems(newItems);
+  };
+
+  // Clear the list
   const clearList = () => {
     setItems([]);
   };
@@ -30,7 +37,7 @@ function App() {
     <main>
       <Header />
       <Input addItem={addItem} />
-      <List items={items} clearList={clearList} />
+      <List items={items} removeItem={removeItem} clearList={clearList} />
       <div className="outer-sort-buttons">
         <SortButtons />
       </div>

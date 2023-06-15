@@ -2,7 +2,7 @@ import Footer from "./Footer";
 
 import { AiOutlineClose } from "react-icons/ai";
 
-const List = ({ items, clearList }) => {
+const List = ({ items, clearList, removeItem }) => {
   // check for zero items
   if (items.length === 0) {
     return (
@@ -27,7 +27,13 @@ const List = ({ items, clearList }) => {
               </label>
               <div className="flex-container">
                 <p>{name}</p>
-                <AiOutlineClose className="delete-item" />
+                <button
+                  type="button"
+                  onClick={() => removeItem(item.id)}
+                  className="delete-item"
+                >
+                  <AiOutlineClose />
+                </button>
               </div>
             </li>
           );

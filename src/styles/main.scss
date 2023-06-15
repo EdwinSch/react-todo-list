@@ -125,12 +125,15 @@ header {
   }
 
   .delete-item {
+    background: none;
+    border: none;
     font-size: 22px;
     cursor: pointer;
-    transition: 250ms ease;
+    transition: 200ms ease;
   }
   .delete-item:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    color: red;
   }
 }
 
