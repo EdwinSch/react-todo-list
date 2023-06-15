@@ -3,12 +3,14 @@ import Input from "./components/Input";
 import List from "./components/List";
 import SortButtons from "./components/SortButtons";
 
+import testdata from "./testdata";
+
 import { useState } from "react";
 import { nanoid } from "nanoid";
 
 function App() {
   //init list
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(testdata);
   // console.log(items);
 
   const addItem = (itemName) => {
@@ -20,11 +22,15 @@ function App() {
     setItems([...items, newItem]);
   };
 
+  const clearList = () => {
+    setItems([]);
+  };
+
   return (
     <main>
       <Header />
       <Input addItem={addItem} />
-      <List items={items} />
+      <List items={items} clearList={clearList} />
       <div className="outer-sort-buttons">
         <SortButtons />
       </div>

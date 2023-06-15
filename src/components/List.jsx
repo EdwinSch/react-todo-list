@@ -2,7 +2,7 @@ import Footer from "./Footer";
 
 import { AiOutlineClose } from "react-icons/ai";
 
-const List = ({ items }) => {
+const List = ({ items, clearList }) => {
   // check for zero items
   if (items.length === 0) {
     return (
@@ -33,7 +33,7 @@ const List = ({ items }) => {
           );
         })}
       </ul>
-      <Footer items={items} />
+      <Footer items={items} clearList={clearList} />
     </section>
   );
 };
