@@ -88,6 +88,10 @@ header {
 }
 
 // List
+.empty-list {
+  color: $todoText;
+}
+
 .list-container {
   margin-top: 24px;
   width: 100%;

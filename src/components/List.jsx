@@ -3,8 +3,16 @@ import Footer from "./Footer";
 import { AiOutlineClose } from "react-icons/ai";
 
 const List = ({ items }) => {
-  // console.log(items);
+  // check for zero items
+  if (items.length === 0) {
+    return (
+      <section className="list-container">
+        <p className="empty-list">No items on the list</p>
+      </section>
+    );
+  }
 
+  // list
   return (
     <section className="list-container">
       <ul className="list">
