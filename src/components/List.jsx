@@ -25,7 +25,7 @@ const List = ({ items }) => {
           );
         })}
       </ul>
-      <Footer />
+      <Footer items={items} />
     </section>
   );
 };

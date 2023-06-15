@@ -1,9 +1,9 @@
 import SortButtons from "./SortButtons";
 
-const Footer = () => {
+const Footer = ({ items }) => {
   return (
     <footer>
-      <p className="items-left">5 items left</p>
+      <p className="items-left">{items.length} items left</p>
       <div className="inner-sort-buttons">
         <SortButtons />
       </div>
