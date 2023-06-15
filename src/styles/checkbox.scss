@@ -2,8 +2,7 @@
 .box {
   display: block;
   position: relative;
-  //   padding-left: 35px;
-  //   margin-bottom: 12px;
+  margin-right: 24px;
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;
@@ -33,11 +32,11 @@
   border: 1px solid #e3e4f1;
 }
 
-/* On mouse-over, add a grey background color */
+/* On mouse-over */
 .box:hover input ~ .checkmark {
-  background-image: linear-gradient(135deg, #57ddff, #c058f3);
+  border: 1px solid #57ddff;
 }
-/* When the checkbox is checked, add a blue background */
+/* When the checkbox is checked */
 .box input:checked ~ .checkmark {
   background-image: linear-gradient(135deg, #57ddff, #c058f3);
 }
@@ -56,9 +55,9 @@
 
 /* Style the checkmark/indicator */
 .box .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
+  left: 8px;
+  top: 4px;
+  width: 4px;
   height: 10px;
   border: solid white;
   border-width: 0 3px 3px 0;
